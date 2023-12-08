@@ -30,7 +30,7 @@ html,body{
 }
 
 #page1{
-    height: 100vh;
+    height: 100vmin;
     width: 100%;
     position: relative;
 }
@@ -43,7 +43,7 @@ html,body{
 }
 
 #page1-content{
-    height: 100%;
+    height: 100vmin;
     position: relative;
     z-index: 2;
     color: white;
@@ -87,7 +87,7 @@ nav h4{
 
 #page2{
     width: 100%;
-    height: 100vh;
+    height: 100vmin;
     z-index: 99;
     background-color: #FAF8F3;
 }
@@ -131,7 +131,7 @@ hr{
 }
 
 #page3{
-    min-height: 100vh;
+    min-height: 100vmin;
     width: 100%;
     position: relative;
     padding: 3vw;
@@ -170,7 +170,7 @@ hr{
 }
 
 #page3-elements{
-    height: 80vh;
+    height: 80vmin;
     /* width: 100%;background-color: red; */
     display: flex;
     align-items: center;
@@ -218,7 +218,7 @@ hr{
 
 #page4{
     width: 100%;
-    height: 100vh;
+    height: 100vmin;
     z-index: 99;
     background-color: #FAF8F3;
 }
@@ -256,7 +256,7 @@ hr{
 }
 
 #page5{
-    height: 100vh;
+    height: 100vmin;
     width: 100%;
     position: relative;
     display: flex;
@@ -296,7 +296,7 @@ hr{
 
 #page6{
     width: 100%;
-    height: 100vh;
+    height: 100vmin;
     background-color: #FAF8F3;
     padding: 4vw 0;
     position: relative;
@@ -361,7 +361,7 @@ hr{
 
   #page7{
     width: 100vw;
-    height: 100vh;
+    height: 100vmin;
     z-index: 99;
     background-color: #FAF8F3;
 }
@@ -411,7 +411,18 @@ hr{
       #loader h3:nth-child(3){
         margin-left: -15%;
       }
-    
+    #page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#page1 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
     #page1-content h1{
         font-size: 27vw;
         font-weight: 400;
@@ -452,7 +463,8 @@ hr{
         display: flex;
         justify-content:space-between;
         align-items: center;
-        padding: 7vw 3vw;
+        margin-top: 5vh;
+        padding: 07vw 3vw;
     }
     
     
@@ -465,7 +477,7 @@ hr{
         width: 100%;
         margin-left: 5%;
         line-height: 1;
-        margin-top: 5vh;
+        margin-top: 1vh;
     }
     
     #page2-para h1{
@@ -537,7 +549,7 @@ hr{
     }
     
     #page3-elements .box{
-        height: 70%;
+        height: 80%;
         width: 100%;
         margin-bottom: 5vw;
         /* background-color: blue; */
