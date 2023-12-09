@@ -57,9 +57,8 @@ function page2animation(){
         scrollTrigger:{
             trigger:"#page2",
             scroller:"#main",
-            start:"top 50%",
-            end:"top 44%",
-
+            start:"top 80%",
+            end:"top 65%",
             scrub:4
         }
     })
@@ -70,8 +69,8 @@ function page2animation(){
         scrollTrigger:{
             trigger:"#page2",
             scroller:"#main",
-            start:"top 48%",
-            end:"top 46%",
+            start:"top 80%",
+            end:"top 65%",
             scrub:4,
         }
     })
@@ -99,8 +98,8 @@ function page4animation(){
         scrollTrigger:{
             trigger:"#page4",
             scroller:"#main",
-            start:"top 50%",
-            end:"end 30%",
+            start:"top 80%",
+            end:"end 650%",
             scrub:4
         }
     })
@@ -111,8 +110,8 @@ function page4animation(){
         scrollTrigger:{
             trigger:"#page4",
             scroller:"#main",
-            start:"top 50%",
-            end:"top 30%",
+            start:"top 80%",
+            end:"top 650%",
             scrub:4
         }
     })
@@ -200,8 +199,8 @@ function page7animation(){
         scrollTrigger:{
             trigger:"#page7",
             scroller:"#main",
-            start:"top 50%",
-            end:"end 30%",
+            start:"top 80%",
+            end:"end 65%",
             scrub:4
         }
     })
@@ -212,8 +211,8 @@ function page7animation(){
         scrollTrigger:{
             trigger:"#page7",
             scroller:"#main",
-            start:"top 50%",
-            end:"top 30%",
+            start:"top 80%",
+            end:"top 65%",
             scrub:4
         }
     })
