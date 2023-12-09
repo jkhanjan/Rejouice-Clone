@@ -74,18 +74,6 @@ function page2animation(){
             scrub:4,
         }
     })
-    gsap.from("#page3 h2",{
-        y:20,
-        stagger:0.2,
-        duration:5,
-        scrollTrigger:{
-            trigger:"#page3",
-            scroller:"#main",
-            start:"top 48%",
-            end:"top 46%",
-            scrub:4,
-        }
-    })
     
 }
 page2animation()
@@ -218,3 +206,146 @@ function page7animation(){
     })
 }
 page7animation()
+
+function navbarAnim(){
+    var menuopen = document.querySelector("nav #menu")
+    var menuclose = document.querySelector("nav2 #close")
+
+    menuopen.addEventListener("click",function(){
+        gsap.to("#nav2",{
+            transform:'translate(0vh)'
+        })
+        gsap.from(".navright1 a, button",{
+            y:80,
+            opacity:0,
+            stagger:0.1,
+            delay:0.2
+
+        })
+        gsap.from("#nav2-lower h3,.nav2lower a",{
+            x:150,
+            opacity:0,
+            stagger:0.1,
+            delay:0.5
+
+        })
+        gsap.from(".navleft-video",{
+            scale:0,
+            delay:0.3
+        })
+    })
+
+    menuclose.addEventListener("click",function(){
+        gsap.to("#nav2",{
+            transform:'translateY(-100vh)'
+        })
+    })
+}
+navbarAnim()
+
+function middleAnim(){
+    gsap.from("#page3-top h2",{
+        y:120,
+        stagger:0.2,
+        duration:5,
+        scrollTrigger:{
+            trigger:"#page3",
+            scroller:"#main",
+            start:"top 48%",
+            end:"top 46%",
+            scrub:4,
+        }
+    })
+    gsap.from("#page8-top h2",{
+        y:120,
+        stagger:0.2,
+        duration:5,
+        scrollTrigger:{
+            trigger:"#page8",
+            scroller:"#main",
+            start:"top 48%",
+            end:"top 46%",
+            scrub:4,
+        }
+    })
+}
+middleAnim()
+
+function footerAnim(){
+    gsap.from(".footer-bottom h1",{
+        y:-200,
+        opacity:0,
+        stagger:0.1,
+        duration:2,
+        scrollTrigger:{
+            trigger:"#footer",
+            scroller:"#main",
+            start:"65% 80%",
+            end:"65% 65%",
+            scrub:4,
+            // markers:true
+        }
+    })
+    gsap.from(".footer-top a",{
+        opacity:0,
+        stagger:0,
+        scrollTrigger:{
+            trigger:"#footer",
+            scroller:"#main",
+            start:"15% 80%",
+            end:"15% 65%",
+            scrub:4,
+            // markers:true
+        }
+    })
+    gsap.from(".footer-top h3",{
+        opacity:0,
+        stagger:0,
+        scrollTrigger:{
+            trigger:"#footer",
+            scroller:"#main",
+            start:"15% 80%",
+            end:"15% 65%",
+            scrub:4,
+            // markers:true
+        }
+    })
+    gsap.from(".footer-top button",{
+        opacity:0,
+        stagger:0,
+        scrollTrigger:{
+            trigger:"#footer",
+            scroller:"#main",
+            start:"15% 80%",
+            end:"15% 65%",
+            scrub:4,
+            // markers:true
+        }
+    })
+    gsap.from(".footer-center a",{
+        opacity:0,
+        stagger:0,
+        scrollTrigger:{
+            trigger:"#footer",
+            scroller:"#main",
+            start:"15% 80%",
+            end:"15% 65%",
+            scrub:4,
+            // markers:true
+        }
+    })
+    gsap.from(".footer-center h3",{
+        opacity:0,
+        stagger:0,
+        scrollTrigger:{
+            trigger:"#footer",
+            scroller:"#main",
+            start:"35% 80%",
+            end:"35% 65%",
+            scrub:4,
+            // markers:true
+        }
+    })
+
+}
+footerAnim()
