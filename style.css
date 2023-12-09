@@ -310,7 +310,7 @@ hr{
 }
 
 #swiperdiv{
-    height: 60vmin;
+    height: 60vh;
     width: 100%;
     /* background-color: red; */
     position: relative;
@@ -703,14 +703,15 @@ hr{
     }
     
     #swiperdiv{
-        height: 40vmin;
+        height: 60vmin;
         width: 100%;
         /* background-color: red; */
         position: relative;
+        margin-top: -4%;
     }
     
     .swiper {
-        width: 180%;
+        width: 130%;
         height: 100%;
       }
     
